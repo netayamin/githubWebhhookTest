@@ -1,0 +1,10 @@
+name: Automation test run
+on:
+  repository_dispatch:
+jobs:
+  build:
+    name: Automation run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do Something
+        run: echo Doing Something...
